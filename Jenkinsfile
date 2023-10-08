@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'cd  /next-sqlite3'
+                sh 'cd  ./next-sqlite3'
                 sh 'npm install'
                 sh 'npm run build'
             }
